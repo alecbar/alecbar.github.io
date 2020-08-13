@@ -9,10 +9,21 @@ header {
     padding-bottom: 25px;
 }
 
+footer {
+    height: 100px;
+    background-image: linear-gradient(#1F2833, #0B0C10, #0B0C10);
+    padding-top: 15px;
+    text-align: center;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: min(2.5vw, 18px);;
     background-color: #1F2833;
+}
+
+img {
+    color: #66FCF1;
 }
 
 h1, h2, h3 {
@@ -71,4 +82,8 @@ ul, li {
 .section-title {
     padding-top: 5px;
     padding-left: 5px;
+}
+
+.footer {
+    padding-top: 50px
 }
