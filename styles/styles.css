@@ -162,3 +162,8 @@ input:focus, textarea:focus {
 .success-form p {
     line-height: 400px;
 }
+
+.error-page {
+    text-align: center;
+    padding-top: 100px;
+}
