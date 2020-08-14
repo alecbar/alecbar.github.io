@@ -1,14 +1,19 @@
 const emailInput = document.getElementById("email")
+const emailError = document.getElementById("email-error")
 
 emailInput.addEventListener("input", (event) => {
+    
+    //Reset error class
+    emailInput.className = ""
+
+    emailError.innerHTML = ""
 
     if (emailInput.validity.valid){
-        emailInput.className = ""
         emailInput.className = "input-success"
     }else {
         if(emailInput.value.length > 3){
-            emailInput.className = ""
             emailInput.className = "input-error"
+            emailError.innerHTML = "Please enter a valid email."
         }
     }
 })

@@ -90,6 +90,10 @@ label {
     margin-bottom: 5px;
 }
 
+span {
+    display: inline-block;
+}
+
 .button {
     width: 100px;
     height: 30px;
@@ -120,7 +124,10 @@ input:focus, textarea:focus {
     border: 1px solid greenyellow;
 }
 
-
+.error-message {
+    font-size: .75rem;
+    color: red
+}
 
 .title {
     text-align: center;
