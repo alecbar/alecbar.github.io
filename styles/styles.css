@@ -40,7 +40,9 @@ h1 {
 }
 
 h2 {
-    font-size: 2em;;
+    font-size: 2em;
+    color: #C5C6C7;
+    font-weight: normal;
 }
 
 p, li, label {
