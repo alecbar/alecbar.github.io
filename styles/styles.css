@@ -123,6 +123,7 @@ input:focus, textarea:focus {
     display: block;
     text-align: center;
     margin: 0, auto;
+    height: 400px;
 }
 
 .details {
@@ -150,4 +151,13 @@ input:focus, textarea:focus {
 
 .footer {
     padding-top: 50px
+}
+
+.success-form {
+    text-align: center;
+    height: 400px;
+}
+
+.success-form p {
+    line-height: 400px;
 }
