@@ -1,11 +1,11 @@
 const emailInput = document.getElementById("email")
 const emailError = document.getElementById("email-error")
 
-emailInput.addEventListener("input", (event) => {
+// Email validation
+emailInput.addEventListener("input", () => {
     
-    //Reset error class
+    //Reset error class and error message
     emailInput.className = ""
-
     emailError.innerHTML = ""
 
     if (emailInput.validity.valid){
@@ -18,9 +18,16 @@ emailInput.addEventListener("input", (event) => {
     }
 })
 
+// Form and message validation
+const messageInput = document.getElementById("message")
+
+messageInput.addEventListener("submit", ()=> {
+    console.log("Submission from message.")
+})
 
 
-const submitForm = (event) => {
+
+const submitForm = () => {
     // Get values
     let email = document.getElementById("email").value
     let message = document.getElementById("message").value
