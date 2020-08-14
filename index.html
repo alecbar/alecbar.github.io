@@ -54,14 +54,14 @@
                 <h2 class="section-title">CONTACT</h2>
                 <div class="sub-section">
                     <div class="form" id="form">
-                        <form id="contact-form" onsubmit="event.preventDefault(); submitForm(event);">
+                        <form id="contact-form" onsubmit="event.preventDefault(); submitForm(event);" novalidate> 
                             <div>
                                 <label for="email">Email</label>
-                                <input name="email" id="email">
+                                <input name="email" id="email" type="email" required>
                             </div>
                             <div>
                                 <label for="message">Message</label>
-                                <textarea name="message" id="message"></textarea>
+                                <textarea name="message" id="message" required></textarea>
                             </div>
                             <input type="submit" class="button" value="Send">
                         </form>

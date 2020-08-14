@@ -1,3 +1,20 @@
+const emailInput = document.getElementById("email")
+
+emailInput.addEventListener("input", (event) => {
+
+    if (emailInput.validity.valid){
+        emailInput.className = ""
+        emailInput.className = "input-success"
+    }else {
+        if(emailInput.value.length > 3){
+            emailInput.className = ""
+            emailInput.className = "input-error"
+        }
+    }
+})
+
+
+
 const submitForm = (event) => {
     // Get values
     let email = document.getElementById("email").value
