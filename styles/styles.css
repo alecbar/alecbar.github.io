@@ -90,6 +90,10 @@ label {
     margin-bottom: 5px;
 }
 
+span {
+    display: inline-block;
+}
+
 .button {
     width: 100px;
     height: 30px;
@@ -110,6 +114,19 @@ label {
 
 input:focus, textarea:focus {
     outline: none;
+}
+
+.input-error {
+    border: 1px solid #fc8966;
+}
+
+.input-success {
+    border: 1px solid #6bfc66;
+}
+
+.error-message {
+    font-size: .75rem;
+    color: #fc8966
 }
 
 .title {
