@@ -117,16 +117,16 @@ input:focus, textarea:focus {
 }
 
 .input-error {
-    border: 1px solid red;
+    border: 1px solid #fc8966;
 }
 
 .input-success {
-    border: 1px solid greenyellow;
+    border: 1px solid #6bfc66;
 }
 
 .error-message {
     font-size: .75rem;
-    color: red
+    color: #fc8966
 }
 
 .title {
