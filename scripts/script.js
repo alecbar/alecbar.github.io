@@ -65,6 +65,18 @@ const submitForm = (emailInput, messageInput) => {
     validateEmail(emailInput)
     validateMessage(messageInput)
 
+    // Verify recaptcha 
+    let response = grecaptcha.getResponse()
+    captchaMessage = document.getElementById("captcha-error")
+    captchaMessage.innerHTML = ""
+    if(response.length == 0){
+        // Recaptcha has not been solved
+        console.log("Captcha error.")
+        captchaMessage.innerHTML = "Please solve captcha."
+        return false
+    }
+
+
     // Then check for input errors from interacting with fields
     if (emailInput.className == "input-error" || messageInput.className == "input-error") {
         console.log("Invalid form submission.")

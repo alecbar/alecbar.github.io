@@ -57,17 +57,21 @@
                 <div class="sub-section">
                     <div class="form" id="form">
                         <form id="contact-form" onsubmit="event.preventDefault(); submitForm(emailInput, messageInput);" novalidate> 
-                            <div class="form-row">
+                            <div>
                                 <label for="email">Email</label>
                                 <input name="email" id="email" type="email" required>
                                 <span id="email-error" class="error-message"></span>
                             </div>
-                            <div class="form-row">
+                            <div>
                                 <label for="message">Message</label>
                                 <textarea name="message" id="message" required></textarea>
                                 <span id="message-error" class="error-message"></span>
                             </div>
-                            <div class="g-recaptcha form-row" data-theme="dark" data-sitekey="6LchycMZAAAAAG7xGjkhgQ4vQKYWWV2lsmT3Serl"></div>
+                            <div>
+                                <div class="g-recaptcha form-row" data-theme="dark" data-sitekey="6LchycMZAAAAAG7xGjkhgQ4vQKYWWV2lsmT3Serl"></div>
+                                <span id="captcha-error" class="error-message"></span>
+                            </div>
+                            
                             <input type="submit" class="button" value="Send">
                         </form>
                     </div>

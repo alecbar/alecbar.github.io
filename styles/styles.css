@@ -30,7 +30,7 @@ img {
     color: #66FCF1;
 }
 
-h1, h2, h3 {
+h2, h3 {
     color: #45A29E
 }
 
@@ -141,7 +141,6 @@ input:focus, textarea:focus {
     display: block;
     text-align: center;
     margin: 0, auto;
-    height: 400px;
 }
 
 .details {
@@ -183,4 +182,8 @@ input:focus, textarea:focus {
 .error-page {
     text-align: center;
     padding-top: 100px;
+}
+
+.g-recaptcha {
+    display: inline-block;
 }
