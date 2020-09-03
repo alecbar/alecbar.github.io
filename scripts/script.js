@@ -124,3 +124,50 @@ const stripData = (email, message) => {
     message = message.trim()
     return [email, message]
 }
+
+// Load projects data
+const fetchProjects = () => {
+
+
+    const projects = document.getElementById("projects")
+
+    options = {
+        headers: {
+            "Accept": "application/json",
+        }
+    }
+    fetch("https://api-alecbarnard-dev.azurewebsites.net/api/projects", options)
+    .then(response => response.json())
+    .then(data => {
+        data.forEach(project => {
+            console.log(project)
+
+            // Div 
+            const div = document.createElement("div")
+            div.classList.add("project")
+
+            // Title
+            const h3 = document.createElement("h3")
+            h3.appendChild(document.createTextNode(project.name))
+            div.appendChild(h3)
+
+            // Description
+            const p = document.createElement("p")
+            p.appendChild(document.createTextNode(project.description))
+            div.appendChild(p)
+
+            // Link
+            const link = document.createElement("a")
+            link.setAttribute("href", project.link)
+            link.appendChild(document.createTextNode(project.linkFriendly))
+            
+            div.appendChild(link)
+
+            projects.appendChild(div)
+        });
+
+    })
+    .catch(err => console.log(err))
+}
+
+fetchProjects()
