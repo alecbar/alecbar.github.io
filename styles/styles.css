@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: min(3vw, 20px);;
+    font-size: 22px;;
 }
 
 header {
@@ -31,21 +31,30 @@ img {
 }
 
 h2, h3 {
-    color: #45A29E
+    color: #66FCF1
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 34px;
     color: #66FCF1
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 26px;
     font-weight: normal;
 }
 
 p, li, label {
     color: #C5C6C7
+}
+
+a {
+    color: #66FCF1;
 }
 
 ul {
@@ -186,4 +195,30 @@ input:focus, textarea:focus {
 
 .g-recaptcha {
     display: inline-block;
+}
+
+.project{
+    width: 90%;
+    margin: 30px auto;
+    color: #C5C6C7;
+    text-align: center;
+}
+
+.project > p {
+    color: #C5C6C7;
+}
+
+.project > h3 {
+    
+}
+
+.project > img {
+    height: 5px;
+}
+
+.project > .description {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    padding: 5px;
 }
