@@ -166,8 +166,22 @@ const fetchProjects = () => {
             projects.appendChild(div)
         });
 
+        toggleSpinner("projects-loading")
+
     })
     .catch(err => console.log(err))
 }
 
 fetchProjects()
+
+const toggleSpinner = (divId) => {
+    div = document.getElementById(divId)
+
+    console.log("Display: ", div.style.display)
+
+    const toggled = div.style.display === "block" ? "none" : "block"
+
+    console.log("Toggled: ", toggled)
+
+    div.style.display = toggled
+}
